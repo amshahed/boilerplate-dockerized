@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+.venv/
+venv/
+
+# Django
+*.pyc
+__pycache__/
+media/
+static/
+
+# production
+build/
+
+# logs
+logs/
+*.log
+
+# misc
+.DS_Store
+.env
