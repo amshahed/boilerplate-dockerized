@@ -102,7 +102,8 @@ DJOSER = {
 
 DATABASES = {
     "default": dj_database_url.config(
-        default=f"postgres://{env.str('POSTGRES_USER')}:{env.str('POSTGRES_PASSWORD')}@db:5432/boilerplate",
+        default=f"postgres://{env.str('POSTGRES_USER')}:{env.str('POSTGRES_PASSWORD')} \
+            @{env.str('POSTGRES_HOST')}:{env.str('POSTGRES_PORT')}/boilerplate",
         conn_max_age=600
     )
 }
